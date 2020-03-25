@@ -1,0 +1,60 @@
+{
+  "name": "abode-homevalue-pricetax-proxy",
+  "version": "1.0.0",
+  "description": "proxy to serve abode's 4 modules on a single web page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon proxyServer/proxyServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apex-io/abode-homevalue-pricetax-proxy.git"
+  },
+  "author": "Phuc Tran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apex-io/abode-homevalue-pricetax-proxy/issues"
+  },
+  "homepage": "https://github.com/apex-io/abode-homevalue-pricetax-proxy#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "body-parser": "^1.19.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "http-proxy-middleware": "^1.0.3",
+    "jest": "^25.1.0",
+    "jest-environment-enzyme": "^7.1.2",
+    "jest-enzyme": "^7.1.2",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "sinon": "^9.0.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "css-loader": "^3.4.2",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.0",
+    "faker": "^4.1.0",
+    "jquery": "^3.4.1",
+    "mysql": "^2.18.1",
+    "regenerator-runtime": "^0.13.3",
+    "style-loader": "^1.1.3"
+  }
+}
