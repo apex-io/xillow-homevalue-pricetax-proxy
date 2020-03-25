@@ -1,0 +1,14 @@
+.app {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 3%;
+}
+
+.leftHandSide {
+  height: 100vh; 
+  overflow: auto;
+}
+.rightHandSide {
+  height: 100vh; 
+  overflow: auto;
+}

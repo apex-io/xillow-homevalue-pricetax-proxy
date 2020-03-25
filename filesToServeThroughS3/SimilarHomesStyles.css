@@ -1,0 +1,461 @@
+#app {
+  width: 452px;
+  padding: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.inc {
+  color: #17b036;
+  font-weight: 600;
+}
+
+.dec {
+  color: #ff5a50;
+  font-weight: 600;
+}
+
+.statsListItem {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.abodestimate {
+  font-weight: 600;
+  border-bottom: 1px dashed rgb(199, 199, 199);
+}
+
+.homeValues {
+  color: #006aff;
+  font-weight: 600;
+}
+
+.score {
+  color: #006aff;
+  font-weight: 600;
+}
+
+.score:hover {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+  color: #2a2a33;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+#neighborhoodHeader {
+  border-bottom: 1px solid #c6c6d1;
+  line-height: 32px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.scoreText {
+  font-weight: 600;
+  border-bottom: 1px dashed #ccc;
+}
+
+.scoreText:hover {
+  cursor: pointer;
+}
+
+li {
+  line-height: 24px;
+  margin: 0 0 15px 0;
+}
+
+ul {
+  padding: 20px;
+}
+
+span {
+  line-height: 24px;
+}
+
+.statsList {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#scoresContainer {
+  padding-top: 12px;
+}
+
+.homeAddress {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 12px;
+}
+
+.homeCost {
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.smallText {
+  font-size: 12px;
+  line-height: 10px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.houseCard {
+  position: relative;
+  width: 150px;
+  height: 187px;
+  border: 1px solid rgb(189, 189, 189);
+  border-bottom: 3px solid rgb(0, 106, 255);
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.cardInfo {
+  position: relative;
+  padding: 0 8px;
+}
+
+.cardCarousel {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* #card1 {
+  display: inline;
+}
+
+#card2 {
+  display: inline;
+} */
+
+.carouselButton {
+  font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
+  color: #006aff;
+  font-weight: 400;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #066aff;
+  border-radius: 32px;
+  background-color: #ffffff;
+  line-height: 10px;
+  position: relative;
+  top: 83px;
+  outline: none;
+  fill: #006aff;
+}
+
+.carouselButton:hover {
+  font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
+  color: #006aff;
+  font-weight: 400;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #066aff;
+  border-radius: 32px;
+  background-color: #066aff;
+  color: #ffffff;
+  line-height: 10px;
+  position: relative;
+  top: 83px;
+  outline: none;
+  cursor: pointer;
+  fill: #ffffff;
+}
+
+.carouselButtonDisabled {
+  font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid lightgray;
+  border-radius: 32px;
+  background-color: #ffffff;
+  line-height: 10px;
+  position: relative;
+  top: 83px;
+  outline: none;
+  fill: lightgray;
+}
+
+#buttonLeft {
+  margin-right: 30px;
+}
+
+#buttonRight {
+  margin-left: 30px;
+}
+
+.bullet {
+  color: lightgray;
+}
+
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.cardContainer {
+  display: flex;
+  transition: 0.25s ease-out;
+}
+
+.cardWindow {
+  width: 324px;
+  overflow: hidden;
+}
+
+.unfilledHeart {
+  position: absolute;
+  width: 10px;
+  left: 125px;
+  top: 10px;
+  fill: white;
+}
+
+.filledHeart {
+  position: absolute;
+  width: 10px;
+  left: 125px;
+  top: 10px;
+  fill: #e45959;
+  color: #e45959;
+  text-shadow: 2px 2px 5px white;
+}
+
+.see {
+  position: relative;
+  color: #006aff;
+  font-weight: 600;
+  fill: #066aff;
+  display: inline-block;
+}
+
+.see:hover {
+  color: #62aef7;
+  font-weight: 600;
+  cursor: pointer;
+  fill: #62aef7;
+  display: flex;
+}
+
+.moreDetails {
+  display: none;
+}
+
+#less {
+  margin-top: 25px;
+  display: none;
+} 
+
+#more {
+  margin-top: 25px;
+  display: block;
+}
+
+#more:hover {
+  margin-top: 25px;
+  display: block;
+}
+
+#nearbyHomesHeader {
+  margin-top: 8px;
+}
+
+.seeArrow {
+  position: relative;
+  display: inline-block;
+  top: 6px;
+  margin-right: 8px;
+}
+
+.seeText {
+  display: inline-block;
+}
+
+.cardImageContainer {
+  position: relative;
+  width: 150px;
+  height: 112px;
+  background-color: lightgray;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.svgArrowLeft {
+  position: relative;
+  top: 4px;
+}
+
+.svgArrowRight {
+  position: relative;
+  top: 4px;
+}
+
+.personImage {
+  height: 32px;
+  position: absolute;
+  top: -21px;
+  left: 10px;
+}
+
+.carImage {
+  width: 32px;
+  position: relative;
+  top: 3px;
+}
+
+.scoreImageContainer {
+  position: relative;
+  width: 40px;
+  display: inline-block;
+}
+
+.scoreItem {
+  margin: 0 0 10px 0;
+}
+
+.mapouter {
+  position:relative;
+  text-align:right;
+  height:200px;
+  width:452px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height: 200px;
+  width: 452px;
+}
+
+.medianToolTip {
+  left: 20px;
+  top: 340px;
+  position: absolute;
+  width: 310px;
+  height: 100px;
+  background-color: #2A2A33;
+  border-radius: 5px;
+  display: none;
+}
+
+.transitToolTip {
+  left: 20px;
+  top: 220px;
+  position: absolute;
+  width: 310px;
+  height: 175px;
+  background-color: #2A2A33;
+  border-radius: 5px;
+  display: none;
+}
+
+.walkToolTip {
+  left: 20px;
+  top: 180px;
+  position: absolute;
+  width: 310px;
+  height: 175px;
+  background-color: #2A2A33;
+  border-radius: 5px;
+  display: none;
+}
+
+.toolTipText {
+  position: relative;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 10px;
+}
+
+.toolTipText .bold {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.innerTextBox {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 23px;
+}
+
+.learnMore {
+  color: #066aff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 10px;
+}
+
+.learnMore:hover {
+  color: #62aef7;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 10px;
+  border-bottom: 1px solid #62aef7;
+  cursor: pointer;
+}
+
+.xButton {
+  position: absolute;
+  color: #ffffff;
+  fill: #ffffff;
+  right: 1px;
+  top: 5px;
+}
+
+.xButton:hover {
+  cursor: pointer;
+}
+
+.medianToolTipArrow {
+  position: absolute;
+  fill: #2A2A33;
+  top: 92px;
+  left: 120px;
+}
+
+.transitToolTipArrow {
+  position: absolute;
+  fill: #2A2A33;
+  top: -8px;
+  left: 120px;
+}
+
+.abodestimate:hover {
+  cursor: pointer;
+}
+
+.transitScoreTip {
+  position: relative;
+  margin-top: 15px;
+}
