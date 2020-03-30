@@ -1,6 +1,15 @@
+body {
+  position: absolute;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
 .app {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 500px 600px;
   column-gap: 3%;
 }
 
@@ -8,7 +17,16 @@
   height: 100vh; 
   overflow: auto;
 }
-.rightHandSide {
-  height: 100vh; 
+
+#Summary {
+  padding-right: 25px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding-bottom: 16px;
+  border-bottom: 1px solid lightgray;
+}
+.bottomRightHandSide {
+  height: 80vh; 
   overflow: auto;
+  margin-left: 0px;
 }
