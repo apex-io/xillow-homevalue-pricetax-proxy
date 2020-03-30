@@ -7,15 +7,20 @@ body {
   width: 100%;
 }
 
-.app {
+.main {
   display: grid;
   grid-template-columns: 500px 600px;
-  column-gap: 3%;
+  /* column-gap: 3%; */
+  box-shadow: 1px 10px 30px 10px rgba(0, 0, 0, 0.05);
 }
 
 .leftHandSide {
   height: 100vh; 
   overflow: auto;
+}
+
+.rightHandSide {
+  margin-left: 16px;
 }
 
 #Summary {
